@@ -6,3 +6,13 @@ html{
     color: whitesmoke;
     }
 
+a{
+    color: rgb(0, 238, 255);
+}
+a:visited{
+    color: lightgrey;
+}
+
+a:hover, a:active{
+    color: #eee;
+}
