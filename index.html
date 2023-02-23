@@ -1,90 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-    <meta name="author"
-        content="Teemu Väänänen">
-    <meta name="descripition"
-        content="This page contains all the things
-    I am learning how to create as I learn HTML">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Teemu Väänänen" />
+    <meta
+      name="descripition"
+      content="This page contains all the things
+    I am learning how to create as I learn HTML"
+    />
     <title>My first webpage</title>
-    <link rel="icon"
-        href="HTML5_logo_and_wordmark.svg.png">
-    <link rel="stylesheet"
-        href="main.css">
-</head>
+    <link rel="icon" href="HTML5_logo_and_wordmark.svg.png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
+  <body>
     <h1>My goals for the year</h1>
-    <hr>
+    <hr />
     <nav>
-        <ul>
-            <li>
-                <a href="#html"> Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planning a vacation</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#html"> Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a vacation</a>
+        </li>
+      </ul>
     </nav>
-    <hr>
+    <hr />
     <section id="html">
-        <h2>I am ready to HTML</h2>
-        <p>This is my first web page.</p>
+      <h2>I am ready to HTML</h2>
+      <p>This is my first web page.</p>
+      <img
+        src="img/HTML5_logo_and_wordmark.svg.png"
+        alt="HTML5_logo_and_wordmark"
+        height="200"
+        width="200"
+      />
+      <figure>
+        <figcaption>HTML CODE</figcaption>
+        <p>
+          <code> &lt;h1&gt;Hello World!&lt;h1&gt; </code>
+        </p>
+      </figure>
 
-        <h3>My daily schedule</h3>
-        <p>Let me tell you how I: </p>
-        <ol>
-            <li>learn about web dev.</li>
-            <li>plan my schedule.</li>
-            <li>use resources from <abbr title="Mozilla Developer network">
-                    <a href="https:/developer.mozilla.org/">MDN</a> </abbr>.
-
-            </li>
-        </ol>
+      <h3>My daily schedule</h3>
+      <p>Let me tell you how I:</p>
+      <ol>
+        <li>learn about web dev.</li>
+        <li>plan my schedule.</li>
+        <li>
+          use resources from
+          <abbr title="Mozilla Developer network">
+            <a href="https:/developer.mozilla.org/">MDN</a> </abbr
+          >.
+        </li>
+      </ol>
     </section>
-    <hr>
+    <hr />
     <section id="vacation">
-        <h2>I am planning a vacation</h2>
-        <p>I've been working hard and <em>really need a getaway</em>. </p>
-        <p>I live in <abbr title="Oulu">OU</abbr> so I want to visit a beach.</p>
+      <h2>I am planning a vacation</h2>
+      <p>I've been working hard and <em>really need a getaway</em>.</p>
+      <p>I live in <abbr title="Oulu">OU</abbr> so I want to visit a beach.</p>
 
-        <h3>Places I'd like to visit</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about Thailand.</p>
-            </li>
-            <li>
-                <p>I've heard good things about going here:</p>
-                <address>
-                    Muottikatu 7A7
-                    <br>
-                    90530, Oulu
-                </address>
-            </li>
-        </ul>
-        <!--TODO: add more places-->
-        <hr>
-        <h3>Places I want to avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear that this <strong>super cold</strong>.</dd>
+      <h3>Places I'd like to visit</h3>
+      <ul>
+        <li>
+          <p>I've heard good things about Thailand.</p>
+          <figure>
+            <img
+              src="img/sea.jpeg"
+              alt="Cool picture of sea"
+              width="500"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>Thai sea getaway</figcaption>
+          </figure>
+        </li>
+        <li>
+          <p>I've heard good things about going here:</p>
+          <address>
+            Cool Resort
+            <br />
+            Somewhere in the world
+          </address>
+          <figure>
+            <img
+              src="img/vacation.jpeg"
+              alt="Cool picture from beach"
+              width="500"
+              height="300"
+              loading="lazy"
+            />
+            <figcaption>Isn't this lovely</figcaption>
+          </figure>
+        </li>
+      </ul>
+      <!--TODO: add more places-->
+      <hr />
+      <h3>Places I want to avoid</h3>
+      <dl>
+        <dt>North Pole</dt>
+        <dd>I hear that this <strong>super cold</strong>.</dd>
 
-            <dt>South pole</dt>
-            <dd>This is also cold</dd>
+        <dt>South pole</dt>
+        <dd>This is also cold</dd>
 
-            <dt>Mountaintops</dt>
-            <dd>These are aslo cold</dd>
-        </dl>
+        <dt>Mountaintops</dt>
+        <dd>These are aslo cold</dd>
+      </dl>
     </section>
-    <hr>
+    <hr />
     &lt;&lt;&lt; &copy; <a href="about.html">Teemu Väänänen</a> &gt;&gt;&gt;
     <p>
-        <a href="#">Back to top</a>
+      <a href="#">Back to top</a>
     </p>
-</body>
-
+  </body>
 </html>
