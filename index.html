@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Teemu Väänänen" />
-    <meta
-      name="descripition"
-      content="This page contains all the things
-    I am learning how to create as I learn HTML"
-    />
-    <title>My first webpage</title>
-    <link rel="icon" href="HTML5_logo_and_wordmark.svg.png" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge" />
+  <meta name="author"
+    content="Teemu Väänänen" />
+  <meta name="descripition"
+    content="This page contains all the things
+    I am learning how to create as I learn HTML" />
+  <title>My first webpage</title>
+  <link rel="icon"
+    href="HTML5_logo_and_wordmark.svg.png" />
+  <link rel="stylesheet"
+    href="main.css" />
+</head>
+
+<body>
+  <header>
     <h1>My goals for the year</h1>
-    <hr />
-    <nav>
+    <nav aria-label="primary navigation">
       <ul>
         <li>
           <a href="#html"> Learning HTML</a>
@@ -25,96 +28,318 @@
         <li>
           <a href="#vacation">Planning a vacation</a>
         </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
       </ul>
     </nav>
-    <hr />
-    <section id="html">
+  </header>
+
+  <hr>
+  <main>
+    <article id="html">
       <h2>I am ready to HTML</h2>
       <p>This is my first web page.</p>
-      <img
-        src="img/HTML5_logo_and_wordmark.svg.png"
-        alt="HTML5_logo_and_wordmark"
-        height="200"
-        width="200"
-      />
-      <figure>
-        <figcaption>HTML CODE</figcaption>
-        <p>
-          <code> &lt;h1&gt;Hello World!&lt;h1&gt; </code>
-        </p>
-      </figure>
 
-      <h3>My daily schedule</h3>
-      <p>Let me tell you how I:</p>
-      <ol>
-        <li>learn about web dev.</li>
-        <li>plan my schedule.</li>
-        <li>
-          use resources from
-          <abbr title="Mozilla Developer network">
-            <a href="https:/developer.mozilla.org/">MDN</a> </abbr
-          >.
-        </li>
-      </ol>
-    </section>
+      <section>
+        <h3>HTML5</h3>
+        <img src="img/HTML5_logo_and_wordmark.svg.png"
+          alt="HTML5_logo_and_wordmark"
+          height="200"
+          width="200" />
+        <figure>
+          <figcaption>HTML CODE</figcaption>
+          <p>
+            <code> &lt;h1&gt;Hello World!&lt;h1&gt; </code>
+          </p>
+        </figure>
+      </section>
+      <section>
+        <h3>My daily schedule</h3>
+        <p>Let me tell you how I:</p>
+        <ol>
+          <li>learn about web dev.</li>
+          <li>plan my schedule.</li>
+          <li>
+            use resources from
+            <abbr title="Mozilla Developer network">
+              <a href="https:/developer.mozilla.org/">MDN</a> </abbr>.
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+            <p>I start at <time datetime="08:00">8am</time> and I write code <time datetime="PT3H">
+                3 hours</time> every morning</p>
+          </details>
+        </aside>
+        <br>
+        <table>
+          <caption>My daily schedule</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetim="11:00">11am</time>
+              </td>
+              <td>
+                Write Code
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetim="12:00">11pm</time>
+              </td>
+              <td>
+                Eat luch
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetim="17:00">5pm</time>
+              </td>
+              <td>
+                Study for other courses
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All other times</td>
+              <td colspan="2">Free time</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">And that's what I day everything I do</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
     <hr />
-    <section id="vacation">
+    <article id="vacation">
       <h2>I am planning a vacation</h2>
       <p>I've been working hard and <em>really need a getaway</em>.</p>
       <p>I live in <abbr title="Oulu">OU</abbr> so I want to visit a beach.</p>
+      <section>
 
-      <h3>Places I'd like to visit</h3>
-      <ul>
-        <li>
-          <p>I've heard good things about Thailand.</p>
-          <figure>
-            <img
-              src="img/sea.jpeg"
-              alt="Cool picture of sea"
-              width="500"
-              height="300"
-              loading="lazy"
-            />
-            <figcaption>Thai sea getaway</figcaption>
-          </figure>
-        </li>
-        <li>
-          <p>I've heard good things about going here:</p>
-          <address>
-            Cool Resort
-            <br />
-            Somewhere in the world
-          </address>
-          <figure>
-            <img
-              src="img/vacation.jpeg"
-              alt="Cool picture from beach"
-              width="500"
-              height="300"
-              loading="lazy"
-            />
-            <figcaption>Isn't this lovely</figcaption>
-          </figure>
-        </li>
-      </ul>
+        <h3>Places I'd like to visit</h3>
+        <ul>
+          <li>
+            <p>I've heard good things about Thailand.</p>
+            <figure>
+              <img src="img/sea.jpeg"
+                alt="Cool picture of sea"
+                width="500"
+                height="300"
+                loading="lazy" />
+              <figcaption>Thai sea getaway</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>I've heard good things about going here:</p>
+            <address>
+              Cool Resort
+              <br />
+              Somewhere in the world
+            </address>
+            <figure>
+              <img src="img/vacation.jpeg"
+                alt="Cool picture from beach"
+                width="500"
+                height="300"
+                loading="lazy" />
+              <figcaption>Isn't this lovely</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
       <!--TODO: add more places-->
-      <hr />
-      <h3>Places I want to avoid</h3>
-      <dl>
-        <dt>North Pole</dt>
-        <dd>I hear that this <strong>super cold</strong>.</dd>
+      <section>
+        <h3>Places I want to avoid</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>I hear that this <strong>super cold</strong>.</dd>
+          <dt>South pole</dt>
+          <dd>This is also cold</dd>
+          <dt>Mountaintops</dt>
+          <dd>These are aslo cold</dd>
+        </dl>
+      </section>
+    </article>
+    <hr>
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>I'd really like to hear from you.</p>
+      <form action="https://httpbin.org/get"
+        method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="John"
+              autocomplete="on"
+              required
+              autofocus>
+          </p>
+          <p>
+            <label for=lastName">LastName:</label>
+            <input type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+              autocomplete="on"
+              required>
+          </p>
+          <p>
+            <label for=password">Password:</label>
+            <input type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              required>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel"
+              name="phone"
+              id="phone"
+              placeholder="5555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required>
+          </p>
+          <p>
+            <label for="decade">Favorite decade:</label>
+            <input type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2020"
+              step="10"
+              value="1980">
+          </p>
+          <p>
+            <label for="coffee">Favorite coffee</label>
+            <select name="coffee"
+              id="coffee">
+              <optgroup label="Coffees">
+                <option value="Regular coffee"
+                  selected>Regular Coffee</option>
+                <option value="Ice coffee">Ice Coffee</option>
+              </optgroup>
+              <optgroup label="EspressoDrinks">
+                <option value="Latte">Latte</option>
+                <option value="Cappuchino">Cappuchino</option>
+                <option value="Espresso">Espresso</option>
+                <option value="Americano">Americano</option>
+              </optgroup>
+              <option value="Other">Other</option>
+            </select>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite food?</legend>
+          <p>
+            <input type="radio"
+              name="food"
+              id="tacos"
+              value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
 
-        <dt>South pole</dt>
-        <dd>This is also cold</dd>
+          <p>
+            <input type="radio"
+              name="food"
+              id="pizza"
+              value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
 
-        <dt>Mountaintops</dt>
-        <dd>These are aslo cold</dd>
-      </dl>
-    </section>
-    <hr />
-    &lt;&lt;&lt; &copy; <a href="about.html">Teemu Väänänen</a> &gt;&gt;&gt;
+          <p>
+            <input type="radio"
+              name="food"
+              id="otherFood"
+              value="otherFood">
+            <label for="otherFood">Other</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox"
+              name="pets"
+              id="dog"
+              value="dogs">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox"
+              name="pets"
+              id="cat"
+              value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox"
+              name="pets"
+              id="fish"
+              value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox"
+              name="pets"
+              id="otherPet"
+              value="otherPet">
+            <label for="otherPet">Other</label>
+            <input type="text"
+              name="petName"
+              id="petName"
+              placeholder="which one">
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Send me a note</legend>
+          <label for="Message">Your message</label>
+          <br>
+          <textarea name="message"
+            id="message"
+            cols="30"
+            rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+      </form>
+    </article>
+  </main>
+  <hr />
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">Teemu Väänänen</a> &gt;&gt;&gt;
+    </p>
     <p>
       <a href="#">Back to top</a>
     </p>
-  </body>
+  </footer>
+</body>
 </html>
