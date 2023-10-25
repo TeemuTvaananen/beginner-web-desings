@@ -1,2 +1,3 @@
-This is a project with which I got to know the basics of React. It was simply done with this video https://www.youtube.com/watch?v=Rh3tobg7hEo&t=1189s
+This is a project with which I got to know the basics of React. It was simply done with this video 
+https://www.youtube.com/watch?v=Rh3tobg7hEo&t=1189s
 It's not much, but beginning of something...
