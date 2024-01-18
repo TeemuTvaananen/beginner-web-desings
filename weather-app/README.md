@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The app was done by following this video 
 https://www.youtube.com/watch?v=UjeXpct3p7M
 
+You can view a little demo here https://drive.google.com/file/d/16cXVapcxSq2A1TriGMnfCiunKFVTlDEn/view?usp=sharing
+
 ## Available Scripts
 
 In the project directory, you can run:
