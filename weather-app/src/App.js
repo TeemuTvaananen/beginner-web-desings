@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function App() {
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
   const [error, setError] = useState(null);
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=09198da52d883d787312f87b736a62fa`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_KEY}`;
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -61,7 +62,7 @@ function App() {
                   <p>Humidity</p>
                 </div>
                 <div className="wind">
-                  {data.wind ? <p className="bold">{data.wind.speed} m/s</p> : null}
+                  {data.wind ? <p className="bold">{data.wind.speed.toFixed()} m/s</p> : null}
                   <p>Wind speed</p>
                 </div>
               </div>

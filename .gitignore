@@ -8,3 +8,4 @@ weather-app/public/favicon.ico
 weather-app/package.json
 weather-app/package-lock.json
 weather-app/src/assets/background.jpg.jpg
+weather-app/.env
