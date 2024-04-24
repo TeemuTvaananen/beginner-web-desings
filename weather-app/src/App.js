@@ -2,12 +2,24 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function App() {
+  // API key for fetching weather data
   const API_KEY = process.env.REACT_APP_API_KEY;
+
+  // State variables to store data, location input, and error messages
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
   const [error, setError] = useState(null);
+    // Construct API URL using API key and location input
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_KEY}`;
 
+/**
+ * Handles the key press event to search for a location's weather data.
+ * If the 'Enter' key is pressed, it makes an API call to retrieve weather data for the specified location.
+ * On a successful API response, it updates the component's state with the new data and clears any existing errors.
+ * If the API call fails (e.g., if the location is not found), it sets an error message and clears previous data.
+ * 
+ * @param {Object} event - The key press event object
+ */
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
       axios.get(url)
